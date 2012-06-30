@@ -56,7 +56,13 @@ $('*').click(function(event) {
 
 						var word = data.shift();
 
-						if (word.length > 8) {
+						if (word.length >= 8) {
+
+							if (word.length >= 10) {
+								delay = 100;
+							} else {
+								delay = 50;
+							}
 
 							tickCounter.pause();
 							setTimeout(function() {
