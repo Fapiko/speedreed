@@ -1,0 +1,13 @@
+{
+	"name": "Speed Reed",
+	"version": "0.1.0",
+	"manifest_version": 1,
+	"description": "Read moar better faster.",
+	"browser_action": {},
+	"permissions": [],
+	"content_scripts": [{
+		"matches": ["http://*/*", "https://*/*"],
+		"js": ["jquery.js", "speedreed.js"],
+		"css": ["speedreed.css"]
+	}]
+}
